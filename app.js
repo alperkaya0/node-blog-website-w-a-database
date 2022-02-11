@@ -64,6 +64,6 @@ app.post("/compose", function(req,res) {
   });
 });
 
-app.listen(3001, function() {
+app.listen(process.env.PORT, function() {
   console.log("Server started on http://localhost:3001");
 });
