@@ -4,8 +4,8 @@
 <p><%= content %></p>
 
 <% posts_ejs.forEach(element => { %>
-<h1><%= element.postTitle %></h1>
-<p><%= element.postBody.substring(0,100) + " (...)" %> <a href="/posts/<%= element.postTitle %> ">Read More</a> </p>
+<h1><%= element.title %></h1>
+<p><%= element.body.substring(0,100) + " (...)" %> <a href="/posts/<%= element._id %> ">Read More</a> </p>
 <% }); %>  
 
 <%- include("partials/footer") -%> 
